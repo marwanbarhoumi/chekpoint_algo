@@ -1,0 +1,18 @@
+ALGORITHM chekpoint
+VAR
+   c:char;
+   nbv, nbc, nbm: INTEGER;
+BEGIN
+    nbc:=0;
+    REPEAT
+        read(c);
+        nbc:=nbc+1;
+        IF (c='a' OR c='i' OR c='u' OR c='e' OR c='y' OR c='o' OR c='A' OR c='E' OR c='I' OR c='U' OR c='Y' OR c='O' ) THEN
+            nbv:= nbv+1;
+            END_IF
+            IF (c=' ') THEN
+            nbm:=nbm+1; 
+        END_IF
+    UNTIL (c='.')
+    write("nbc, nbv, nbm")
+END

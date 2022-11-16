@@ -1,0 +1,35 @@
+ALGORITHM algorithm_name
+VAR
+    
+    Days, Month, Year, nbm, nby : INTEGER;
+    ch: STRING;
+BEGIN
+    WRITE('write the date number')
+    READ(ch);
+
+    Days:= ch[1]+ch[2];
+     nbm:= ch[3]+ch[4];
+      nby:= ch[5]+ch[6];
+
+      SWITCH (nbm) DO
+        case 01 : write ('January')
+        case 02 : write ('February')
+        case 03 : write ('March')
+        case 04 : write ('april')
+        case 05 : write ('may')
+        case 06 : write ('jun')
+        case 07 : write ('july')
+        case 08 : write ('August')
+        case 09 : write ('September')
+        case 10 : write ('October')
+        case 11 : write ('November')
+        default : write ('December')
+      END_SWITCH
+ Month := nbm;
+ year:=
+
+ write("day:" ,Days);
+ write("month:" ,Month);
+ write("year:",Year);
+
+END
